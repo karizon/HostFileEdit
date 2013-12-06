@@ -50,6 +50,7 @@
 		0A35A0CF18522D88003560F8 /* HostFileEditTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HostFileEditTests-Info.plist"; sourceTree = "<group>"; };
 		0A35A0D118522D88003560F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A35A0D318522D88003560F8 /* HostFileEditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostFileEditTests.m; sourceTree = "<group>"; };
+		0A35A0DD185234AB003560F8 /* HostFileEdit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HostFileEdit.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +116,7 @@
 		0A35A0AF18522D87003560F8 /* HostFileEdit */ = {
 			isa = PBXGroup;
 			children = (
+				0A35A0DD185234AB003560F8 /* HostFileEdit.entitlements */,
 				0A35A0BB18522D87003560F8 /* HFEAppDelegate.h */,
 				0A35A0BC18522D87003560F8 /* HFEAppDelegate.m */,
 				0A35A0BE18522D87003560F8 /* MainMenu.xib */,
@@ -202,6 +204,14 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Geoff Harrison";
 				TargetAttributes = {
+					0A35A0A518522D87003560F8 = {
+						DevelopmentTeam = D2FA7YYCVS;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
 					0A35A0C618522D88003560F8 = {
 						TestTargetID = 0A35A0A518522D87003560F8;
 					};
@@ -384,11 +394,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HostFileEdit/HostFileEdit.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HostFileEdit/HostFileEdit-Prefix.pch";
 				INFOPLIST_FILE = "HostFileEdit/HostFileEdit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -397,11 +411,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HostFileEdit/HostFileEdit.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HostFileEdit/HostFileEdit-Prefix.pch";
 				INFOPLIST_FILE = "HostFileEdit/HostFileEdit-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
