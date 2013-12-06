@@ -16,8 +16,6 @@
 		0A35A0C218522D88003560F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A35A0C118522D88003560F8 /* Images.xcassets */; };
 		0A35A0C918522D88003560F8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35A0C818522D88003560F8 /* XCTest.framework */; };
 		0A35A0CA18522D88003560F8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A35A0A918522D87003560F8 /* Cocoa.framework */; };
-		0A35A0D218522D88003560F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A35A0D018522D88003560F8 /* InfoPlist.strings */; };
-		0A35A0D418522D88003560F8 /* HostFileEditTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35A0D318522D88003560F8 /* HostFileEditTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +45,6 @@
 		0A35A0C118522D88003560F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A35A0C718522D88003560F8 /* HostFileEditTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HostFileEditTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A35A0C818522D88003560F8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0A35A0CF18522D88003560F8 /* HostFileEditTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HostFileEditTests-Info.plist"; sourceTree = "<group>"; };
-		0A35A0D118522D88003560F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0A35A0D318522D88003560F8 /* HostFileEditTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HostFileEditTests.m; sourceTree = "<group>"; };
 		0A35A0DD185234AB003560F8 /* HostFileEdit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HostFileEdit.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				0A35A0AF18522D87003560F8 /* HostFileEdit */,
-				0A35A0CD18522D88003560F8 /* HostFileEditTests */,
 				0A35A0A818522D87003560F8 /* Frameworks */,
 				0A35A0A718522D87003560F8 /* Products */,
 			);
@@ -134,24 +128,6 @@
 				0A35A0B518522D87003560F8 /* main.m */,
 				0A35A0B718522D87003560F8 /* HostFileEdit-Prefix.pch */,
 				0A35A0B818522D87003560F8 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0A35A0CD18522D88003560F8 /* HostFileEditTests */ = {
-			isa = PBXGroup;
-			children = (
-				0A35A0D318522D88003560F8 /* HostFileEditTests.m */,
-				0A35A0CE18522D88003560F8 /* Supporting Files */,
-			);
-			path = HostFileEditTests;
-			sourceTree = "<group>";
-		};
-		0A35A0CE18522D88003560F8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0A35A0CF18522D88003560F8 /* HostFileEditTests-Info.plist */,
-				0A35A0D018522D88003560F8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,7 +228,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A35A0D218522D88003560F8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A35A0D418522D88003560F8 /* HostFileEditTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +283,6 @@
 				0A35A0BF18522D87003560F8 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		0A35A0D018522D88003560F8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A35A0D118522D88003560F8 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
